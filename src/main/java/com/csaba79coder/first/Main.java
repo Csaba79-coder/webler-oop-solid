@@ -32,5 +32,11 @@ public class Main {
         Animal animal2 = new Dog();
         animal2.makeSound(); // lefut a Dog implementációja
         // animal2.fetch(ball); // fordítási hiba, mert az Animal nem ismeri a fetch metódust (Ő nincs a szülőben!)
+        System.out.println("---------------------");
+        // Ezzel vigyázni, mert veszélyes lehet!!! -> csak akkor szabad, ha biztos vagy benne,
+        // hogy az animal2 egy Dog ... különben ClassCastException-t kapsz
+        ((Dog) animal2).fetch(ball);
+        System.out.println("---------------------");
+        // ((Dog) animal).fetch(ball);
     }
 }
