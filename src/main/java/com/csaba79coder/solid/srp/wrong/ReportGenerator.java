@@ -1,6 +1,6 @@
-package com.csaba79coder.solid.srp;
+package com.csaba79coder.solid.srp.wrong;
 
-public class ReportGeneratorWrong {
+public class ReportGenerator {
 
     // Egy osztálynak egy felelőssége van, ezért ez nem egy jó megközelítés a Single Responsibiity elv miatt!
     // a probléma, hogy két dolgot csinál, egyik generál egy riportot, a másik metódus pedig elmenti azt
